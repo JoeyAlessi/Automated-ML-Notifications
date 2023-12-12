@@ -1,21 +1,6 @@
 # Automated-ML-Notifications
 
-
-Certainly! Below is a similar README format tailored for your repository. Feel free to adjust it as necessary to fit the specifics of your project.
-
----
-
-# [Your Project Name]
-
-[Your project description: A brief introduction to what your project does.]
-
-## Prerequisites
-
-Before you begin, ensure you have met the following requirements:
-
-- Node.js installed on your system.
-- A package manager: either pnpm, npm, yarn, or bun.
-- A Twilio account with WhatsApp sandbox configured.
+Get notified of a custom event via text message
 
 ## Installation
 
@@ -82,25 +67,3 @@ bun src/index.ts
 - [WhatsApp Sandbox](https://console.twilio.com/us1/develop/sms/try-it-out/whatsapp-learn): Where you will get the FROM number.
 - [Twilio SMS Overview](https://console.twilio.com/us1/develop/sms/overview): For a general overview of Twilio SMS services.
 - [Twilio Console](https://console.twilio.com/): To get your account/auth token/TO phone number. These will be located at the bottom under "Account Info".
-
-## Contributing to [Your Project Name]
-
-To contribute to [Your Project Name], follow these steps:
-
-1. Fork this repository.
-2. Create a branch: `git checkout -b <branch_name>`.
-3. Make your changes and commit them: `git commit -m '<commit_message>'`
-4. Push to the original branch: `git push origin <project_name>/<location>`
-5. Create the pull request.
-
-Alternatively, see the GitHub documentation on [creating a pull request](https://help.github.com/articles/creating-a-pull-request/).
-
-## License
-
-This project is licensed under the [Your License Name] - see the LICENSE file for details.
-
----
-
-Feel free to adjust the README to better suit your project's specific needs and guidelines.
-
-   

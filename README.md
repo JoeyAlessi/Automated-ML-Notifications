@@ -1,58 +1,69 @@
-## Simple twilio typescript whatsapp example w/ free plan
+# Automated-ML-Notifications
 
-1. Install deps
+Get notified of a custom event via text message
 
-   ##### Pnpm
+## Installation
 
-   ```
-   pnpm install
-   ```
+Choose your preferred package manager for installing dependencies:
 
-   ##### Npm
+### Using pnpm
 
-   ```
-   npm install
-   ```
+```bash
+pnpm install
+```
 
-   ##### Yarn
+### Using npm
 
-   ```
-   yarn
-   ```
+```bash
+npm install
+```
 
-   ##### Bun
+### Using Yarn
 
-   ```
-   bun install
-   ```
+```bash
+yarn
+```
 
-2. Join sandbox with your real whatsapp number (that number will be used as the "to" in the message create)- https://console.twilio.com/us1/develop/sms/try-it-out/whatsapp-learn
-3. create .env file at project root
-4. Write your TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN, TO_NUMBER, FROM_NUMBER from twilio in .env. You can find these values through the links at [the useful links section](#useful-links)
+### Using Bun
 
-   ```
-    TWILIO_ACCOUNT_SID=<TWILIO_ACCOUNT_SID>
-    TWILIO_AUTH_TOKEN=<TWILIO_AUTH_TOKEN>
-    TO_NUMBER="whatsapp:<number>"
-    FROM_NUMBER="whatsapp:<number>"
-   ```
+```bash
+bun install
+```
 
-5. Run the script (using pnpm here, but any package manager will work)
+## Setting Up Twilio WhatsApp Sandbox
 
-   ```
-   pnpm run send
-   ```
+1. Join the sandbox following this link: [Twilio WhatsApp Sandbox](https://console.twilio.com/us1/develop/sms/try-it-out/whatsapp-learn).
+2. Use your real WhatsApp number as this number will be used as the "to" in the message creation.
 
-   or if you're cool
+## Configuring Environment Variables
 
-   ```
-   bun src/index.ts
-   ```
+Create a `.env` file at the root of your project and write your Twilio credentials and phone numbers in it:
 
-### Useful links
+```env
+TWILIO_ACCOUNT_SID=<Your Twilio Account SID>
+TWILIO_AUTH_TOKEN=<Your Twilio Auth Token>
+TO_NUMBER="whatsapp:<Your WhatsApp Number>"
+FROM_NUMBER="whatsapp:<Your Twilio WhatsApp Number>"
+```
 
-- Whatsapp sandbox where you will get the FROM number: https://console.twilio.com/us1/develop/sms/try-it-out/whatsapp-learn
+You can find these values through the links in the Useful Links section below.
 
-- Overview: https://console.twilio.com/us1/develop/sms/overview
-- To get account/auth token/TO phone number: https://console.twilio.com/
-  - Will be located at the bottom under "Account Info"
+## Running the Script
+
+Run the script using your package manager. Here's how you can do it with pnpm, but you can use any package manager:
+
+```bash
+pnpm run send
+```
+
+Alternatively, if using Bun:
+
+```bash
+bun src/index.ts
+```
+
+## Useful Links
+
+- [WhatsApp Sandbox](https://console.twilio.com/us1/develop/sms/try-it-out/whatsapp-learn): Where you will get the FROM number.
+- [Twilio SMS Overview](https://console.twilio.com/us1/develop/sms/overview): For a general overview of Twilio SMS services.
+- [Twilio Console](https://console.twilio.com/): To get your account/auth token/TO phone number. These will be located at the bottom under "Account Info".
